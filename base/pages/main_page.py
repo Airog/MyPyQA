@@ -1,4 +1,7 @@
-class MainPage:
+import base.utils.json_reader as navigation
+from base.pages.base_page import BasePage
+
+class MainPage(BasePage):
     def __init__(self, driver):
         self.driver = driver
 
