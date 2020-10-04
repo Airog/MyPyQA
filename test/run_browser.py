@@ -2,11 +2,8 @@ from selenium import webdriver
 
 
 def test_driver_run(tbase):
-    # browser = webdriver.Chrome()
-    # browser.get('http://the-internet.herokuapp.com/')
-
     browser = tbase.wd
-    tbase.navigate('http://the-internet.herokuapp.com/')
+    tbase.navigate()
     tbase.MainPage.clickABTestingLnk()
     header = tbase.ABTesting.getHeader()
     assert header == 'A/B Test Control' 

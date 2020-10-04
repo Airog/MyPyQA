@@ -4,5 +4,5 @@ class ABTesting:
 
     def getHeader(self):
         d = self.driver
-        text = d.browser.find_element_by_css_selector('#content > div > h3').text
+        text = d.find_element_by_css_selector('#content > div > h3').text
         return text
